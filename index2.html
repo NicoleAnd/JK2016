@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Content</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index2.css">
+</head>
+
+<body>
+    <!-- logo -->
+    <div class="navbar navbar-duomi navbar-static-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" id="logo" class="navbar-brand">后台管理系统</a>
+            </div>
+        </div>
+    </div>
+    <!-- left-nav -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <ul id="main-nav" class="main-nav nav nav-tabs nav-stacked">
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-th-large"></i> 首页
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#systemSetting" class="nav-header collapsed" data-toggle="collapse">
+                            <i class="glyphicon glyphicon-cog"></i> 系统管理
+                            <span class="pull-right glyphicon glyphicon-chevron-toggle"></span>
+                        </a>
+                        <ul id="systemSetting" class="nav nav-list collapse secondmenu" style="height: 0px;">
+                            <li class="active">
+                                <a href="#" onclick="document.getElementById('cont1').style.display='block';document.getElementById('cont2').style.display='none';document.getElementById('cont3').style.display='none'">
+                                    <i class="glyphicon glyphicon-user"></i> 用户管理
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="document.getElementById('cont2').style.display='block';document.getElementById('cont1').style.display='none';document.getElementById('cont3').style.display='none'">
+                                    <i class="glyphicon glyphicon-th-list"></i> 图书管理
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="document.getElementById('cont3').style.display='block';document.getElementById('cont1').style.display='none';document.getElementById('cont2').style.display='none'">
+                                    <i class="glyphicon glyphicon-asterisk"></i> 角色管理
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-edit"></i> 修改密码
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-eye-open"></i> 日志查看
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#infor" class="nav-header collapsed" data-toggle="collapse">
+                            <i class="glyphicon glyphicon-cog"></i> 系统管理
+                            <span class="pull-right glyphicon glyphicon-chevron-toggle"></span>
+                        </a>
+                        <ul id="infor" class="nav nav-list collapse secondmenu" style="height: 0px;">
+                            <li class="active"><a href="#"><i class="glyphicon glyphicon-user"></i> 用户管理</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-th-list"></i> 菜单管理</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-asterisk"></i> 角色管理</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-edit"></i> 修改密码</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i> 日志查看</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <div class="right-content">
+                    <div id="cont1" style="display:none;">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <td>#</td>
+                                    <td>姓名</td>
+                                    <td>性别</td>
+                                    <td>身份证号</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>张三</td>
+                                    <td>男</td>
+                                    <td>610111111000432123</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>李四</td>
+                                    <td>男</td>
+                                    <td>610111111000432124</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>王五</td>
+                                    <td>女</td>
+                                    <td>610111111000432125</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>赵六</td>
+                                    <td>女</td>
+                                    <td>610111111000432126</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>吴七</td>
+                                    <td>女</td>
+                                    <td>610111111000432127</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="cont2" style="display:none">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <td>#</td>
+                                    <td>图书名称</td>
+                                    <td>出版社</td>
+                                    <td>作者</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>JavaScript编程精解</td>
+                                    <td>机械工业出版社</td>
+                                    <td>abc</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>html</td>
+                                    <td>机械工业出版社</td>
+                                    <td>def</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>css</td>
+                                    <td>机械工业出版社</td>
+                                    <td>mno</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="cont3" style="display:none">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <td>#</td>
+                                    <td>权限编码</td>
+                                    <td>权限名称</td>
+                                    <td>权限拥有者</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1001</td>
+                                    <td>菜单管理</td>
+                                    <td>张三</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>1002</td>
+                                    <td>权限管理</td>
+                                    <td>赵七</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>1003</td>
+                                    <td>用户管理</td>
+                                    <td>李四</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
