@@ -1,0 +1,185 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下，你就知道 </title>
+    <link rel="shortcut icon" href="images/ico.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+    <div id="bd">
+        <!--中间部分-->
+        <div class="cen">
+            <div class="form_submit">
+                <div class="logo">
+                    <img src="images/bd_logo.png">
+                </div>
+                <form id="form" method="get" action="#">
+                    <span class="search_input search_class">
+                            <i class="search_camera"></i>
+                            <input class="input_text input_class" type="text" autofocus>
+                        </span>
+                    <span class="btn_submit">
+                            <input class="bg btn" type="button" value="百度一下">
+                        </span>
+                </form>
+            </div>
+        </div>
+        <!--导航-->
+        <div id="top">
+            <a class="top_lead" href="htttp:/tp://www.nuomi.com/?cid=002540">糯米</a>
+            <a class="top_lead" href="http/news.baidu.com">新闻</a>
+            <a class="top_lead" href="http://www.hao123.com">hao123</a>
+            <a class="top_lead" href="http://map.baidu.com">地图</a>
+            <a class="top_lead" href="http://v.baidu.com">视频</a>
+            <a class="top_lead" href="http://tieba.baidu.com">贴吧</a>
+            <a href="javascript:;" class="login" id="loginName">登录</a>
+            <!-- 设置菜单 -->
+            <div class="setting-menu">
+                <a class="baidu-nav" href="javascript:;">设置</a>
+                <!-- 设置下拉菜单 -->
+                <div class="baidu-setting">
+                    <i class="icon-trangle"></i>
+                    <a href="javascript:;" title="navv">搜索设置</a>
+                    <a href="//www.baidu.com/gaoji/advanced.html" title="navv">高级设置</a>
+                    <a href="javascript:;" title="navv">关闭预测</a>
+                    <a href="javascript:;" title="navv">搜索历史</a>
+                </div>
+                <!-- end 设置下拉菜单-->
+            </div>
+            <a href="http://www.baidu.com/details/" class="more">更多产品</a>
+        </div>
+        <div class="details">
+            <div class="more_dp">更多产品</div>
+            <div class="more_bottom">
+                <a href="http://music.baidu.com" title="na">
+                    <span class="bg_dp music"></span>音乐
+                </a>
+                <a href="http://image.baidu.com" title="na">
+                    <span class="bg_dp image"></span>图片
+                </a>
+                <a href="http://zhidao.baidu.com" title="na">
+                    <span class="bg_dp zhidao"></span>知道
+                </a>
+                <a href="http://wenku.baidu.com" title="na">
+                    <span class="bg_dp wenku"></span>文库
+                </a>
+                <a href="http://top.baidu.com" title="na">
+                    <span class="bg_dp top"></span>风云榜
+                </a>
+                <a href="http://e.baidu.com/?refer=888" title="na">
+                    <span class="bg_dp ebaidu"></span>百度推广
+                </a>
+            </div>
+            <div class="more_footer" title="na">
+                <a href="//www.baidu.com/more/">全部产品>></a>
+            </div>
+        </div>
+        <!--底部-->
+        <div id="footer">
+            <div class="footer_center">
+                <div class="left">
+                    <div class="baidu">
+                        <div class="iphone"></div>
+                        <div class="txt">
+                            <p>
+                                <b>手机百度</b>
+                            </p>
+                            <p>
+                                <span>快人一步</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="baidu baidu_left">
+                        <div class="nuomi"></div>
+                        <div class="txt">
+                            <p>
+                                <b>百度糯米</b>
+                            </p>
+                            <p>
+                                <span>一元大餐</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <p class="right_top">
+                        <a href="/" id="set">把百度设为首页</a>
+                        <a href="http://home.baidu.com" class="a_margin">关于百度</a>
+                        <a href="http://ir.baidu.com" class="a_margin">About Baidu</a>
+                    </p>
+                    <p class="right_middle">
+                        ©2016 Baidu
+                        <a href="http://www.baidu.com/duty/">使用百度前必读</a>
+                        <a href="http://jianyi.baidu.com/">意见反馈</a> 京ICP证030173号
+                        <i class="small ICP"></i>
+                    </p>
+                    <p class="right_footer">
+                        <i class="small JGW"></i> 京公网安备11000002000001号
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 登录弹框 -->
+    <!-- 遮罩层 -->
+    <div class="login-mask"></div>
+    <!-- 弹框 -->
+    <div class="login-popover">
+        <div class="login-poptit">
+            <a href="javascript:;" title="关闭" class="close">×</a>
+            <span>登录百度账号</span>
+        </div>
+        <div class="login-popbod dform">
+            <form class="login-signin" name="loginform" action="indexEnter.html" method="post">
+                <ol>
+                    <li>
+                        <a class="message-login aword" href="#">
+                            <span>短信快捷登录</span>
+                        </a>
+                    </li>
+                    <li>
+                        <label class="username"></label>
+                        <input id="userName" class="ipt" type="text" name="log" value="" placeholder="手机/邮箱/用户名" />
+                    </li>
+                    <li>
+                        <label class="password"></label>
+                        <input id="passWord" class="ipt" type="password" name="pwd" value="" size="20" placeholder="密码" />
+                    </li>
+                    <li>
+                        <label>
+                            <input class="auto-login" name="auto-login" type="checkbox" value="" checked="checked" />
+                            <span class="auto-login">下次自动登录</span>
+                            <span class="login-trouble aword">登录遇到问题</span>
+                        </label>
+                    </li>
+                    <li>
+                        <input id="submitName" class="btnn" type="submit" name="submit" value=" 登 录 " />
+                    </li>
+                    <li>
+                        <span class="fast-register aword">立即注册</span>
+                    </li>
+                    <li>
+                        <span class="line"></span>
+                    </li>
+                    <li>
+                        <span class="auto-login">可以使用以下方式登录</span>
+                    </li>
+                    <li class="login-icon">
+                        <a class="qq-icon" href="#"></a>
+                        <a class="sina-icon" href="#"></a>
+                        <a class="code-icon" href="#"></a>
+                    </li>
+                </ol>
+            </form>
+        </div>
+    </div>
+    <script src="sdk/jquery-3.1.0.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
