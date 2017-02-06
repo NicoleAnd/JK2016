@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body,
+html {
+    height: 100%;
+    background-color: #F5DEB3;
+}
+
+body {
+    -webkit-perspective: 1000px;
+}
+
+@-webkit-keyframes "rotate" {
+    0% {
+        transform: rotateX(0) rotateY(0);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.cube {
+    width: 192px;
+    height: 192px;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 10s;
+    transition: all 10s;
+    -webkit-animation: "rotate" 6s ease infinite;
+}
+
+.cube div {
+    width: 192px;
+    height: 192px;
+    border-radius: 5px;
+    /* border:1px solid;*/
+}
+
+
+/*红色 front*/
+
+.cube .cube1 {
+    background-color: transparent;
+    transform: translateZ(100px);
+    overflow: hidden;
+    position: absolute;
+}
+
+.cube1 div {
+    width: 60px;
+    height: 60px;
+    background-color: #FF0000;
+    float: left;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+
+/*黄色 after*/
+
+.cube .cube2 {
+    background-color: transparent;
+    transform: translateZ(-100px);
+    position: absolute;
+}
+
+.cube2 div {
+    width: 60px;
+    height: 60px;
+    background-color: #FFD700;
+    float: left;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+
+/*蓝色 top*/
+
+.cube .cube3 {
+    background-color: transparent;
+    transform: rotateX(90deg) translateZ(100px);
+    position: absolute;
+}
+
+.cube3 div {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: #1E90FF;
+}
+
+
+/*绿色 bottom*/
+
+.cube .cube4 {
+    background-color: transparent;
+    transform: rotateX(90deg) translateZ(-100px);
+    position: absolute;
+}
+
+.cube4 div {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: #00CD00;
+}
+
+
+/*黑色 right*/
+
+.cube .cube5 {
+    background-color: transparent;
+    transform: rotateY(90deg) translateZ(100px);
+    position: absolute;
+}
+
+.cube5 div {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: #030303;
+}
+
+
+/*橘色 left*/
+
+.cube .cube6 {
+    background-color: transparent;
+    transform: rotateY(90deg) translateZ(-100px);
+    position: absolute;
+}
+
+.cube6 div {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: #FF8C00;
+}
