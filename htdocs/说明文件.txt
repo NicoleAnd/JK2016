@@ -1,0 +1,45 @@
+index.html			新闻页面
+
+admin.html			后台新闻管理页面
+
+baidunews.sql		数据库
+
+css中
+
+	normalize.css 	格式统一样式
+	
+	bootstrap.min.css Bootstrap框架
+
+	news.css  		页面样式
+
+font				icon样式
+
+img					图片
+
+js中				
+
+	news.js 		新闻页面js
+
+	admin.js 		后台新闻管理页面js
+
+	bootstrap.min.js Bootstrap框架
+
+	jquery.min.js 	jQuery
+
+
+server中
+
+	config.php		配置文件
+
+	db.php			连接数据库文件	
+
+	insert.php		插入信息
+
+	delete.php		删除信息
+
+	update.php		修改信息
+
+	curnews.php		分类信息
+
+	getnews.php		index页面显示
+
