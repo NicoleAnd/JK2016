@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    min-width: 700px;
+    *overflow-x: hidden;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 13px;
+    min-height: 600px;
+    position: relative;
+    height: 100%;
+    text-align: center;
+
+}
+
+/*中间布局*/
+.cen {
+    position: relative;
+    top: 38%;
+}
+
+.form_submit {
+    position: relative;
+    top: 65px;
+    +top: -191px;
+    _top: -120px;
+}
+
+/*logo图片*/
+.logo img {
+    width: 270px;
+    height: 129px;
+}
+
+/*表单*/
+#form {
+    margin: 22px auto 0;
+    width: 641px;
+    text-align: left;
+    z-index: 100;
+}
+
+/*搜索*/
+.search_input {
+    position: relative;
+}
+
+.search_input input {
+    width: 500px;
+}
+
+.search_class {
+    border: 1px solid #b6b6b6;
+    width: 539px;
+    display: inline-block;
+    height: 34px;
+    margin-right: 0;
+    border-right-width: 0;
+}
+
+.search_class:hover {
+    border-color: #999;
+}
+
+/*搜索框*/
+.input_text {
+    position: relative;
+}
+
+.input_class {
+    font-size: 16px;
+    height: 22px;
+    margin: 6px 0 0 7px;
+    border: 0;
+    outline: 0;
+}
+
+/*照相机*/
+.search_camera {
+    width: 18px;
+    height: 16px;
+    top: 50%;
+    right: 11px;
+    margin-top: -8px;
+    background: #fff url(../images/camera.png) no-repeat;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.search_camera:hover {
+    background-position: 0 -20px;
+}
+
+/*按钮背景*/
+.btn_submit {
+    display: inline-block;
+    float: right;
+    border-left: 1px solid #3385ff;
+    *position: relative;
+    *top: -36px;
+}
+
+.bg:hover {
+    background-color: #317ef3;
+}
+
+/*按钮样式*/
+.btn {
+    color: white;
+    letter-spacing: 1px;
+    background-color: #3385ff;
+    width: 100px;
+    height: 36px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 0;
+}
+
+/*导航*/
+#top {
+    margin: 20px 0 5px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 24px;
+    padding-right: 130px;
+    display: block;
+}
+
+#top a:hover {
+    color: #0404DE;
+}
+
+.top_lead {
+    color: #333333;
+    font-weight: bold;
+    margin-left: 20px;
+    float: left;
+}
+
+/*登录/设置*/
+.login, .set, .more {
+    float: left;
+    color: #333333;
+    margin-left: 20px;
+}
+/*设置*/
+/*设置下拉菜单*/
+.setting-menu{
+    position: absolute;
+    width: 47px;
+    height: 24px;
+    right: 80px;
+    text-align: center;
+}
+.setting-menu a{
+    margin: 0;
+    color: #333333;
+}
+.setting-menu:hover .baidu-setting{
+    display: block;
+}
+.setting-menu .baidu-setting{
+    position: absolute;
+    top: 25px;
+    left: -7px;
+    width: 60px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 5px #ddd;
+    
+    z-index: 99;
+    /*隐藏*/
+    display: none;
+}
+
+#top .setting-menu .baidu-setting a{
+    display: inline-block;
+    width: 100%;
+    color: #333;
+}
+#top .setting-menu .baidu-setting a:hover{
+    display: inline-block;
+    color: #fff;
+    background-color: #3385ff;
+}
+
+.setting-menu .icon-trangle{
+    top: -11px;
+    left: 25px;
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    border:5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #d8d8d8;
+}
+
+.setting-menu .icon-trangle:after{
+    content: '.';
+    top: -4px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    border:5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #fff;
+}
+
+
+/*更多*/
+.more {
+    position: absolute;
+    right: 10px;
+    background-color: #3388ff;
+    color: white;
+    text-decoration: none;
+    width: 60px;
+    height: 23px;
+    text-align: center;
+}
+
+/*更多产品整体*/
+.details {
+    z-index: 2;
+    width: 85px;
+    border-left: 1px solid #e7e7e7;
+    background-color: #f9f9f9;
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-height: 100%;
+    display: none;
+}
+
+/*更多产品*/
+.more_dp {
+    color: #333333;
+    width: 66px;
+    text-align: center;
+    height: 43px;
+    line-height: 43px;
+    padding-top: 9px;
+    margin: 0 auto;
+    font-size: 13px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.more_bottom a {
+    width: 66px;
+    height: 68px;
+    text-align: center;
+    color: #666666;
+    text-decoration: none;
+    border-bottom: 1px solid #f0f0f0;
+    display: block;
+    margin: 0 auto;
+}
+
+/*下拉统一样式*/
+.bg_dp {
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: 10px auto 5px;
+    cursor: pointer;
+    background-image: url(../images/bg_pd.png);
+}
+
+/*音乐*/
+.music {
+    width: 40px;
+    background-position: -72px 0;
+}
+
+/*图片*/
+.image {
+    background-position: -112px 0;
+}
+
+/*知道*/
+.zhidao {
+    background-position: -36px 0;
+}
+
+/*文库*/
+.wenku {
+    background-position: -148px 0;
+}
+
+/*风云榜*/
+.top {
+    background-position: -184px 0;
+}
+
+/*百度推广*/
+.ebaidu {
+    background-position: -220px 0;
+}
+
+/*全部产品*/
+.more_footer {
+    margin-top: 15px;
+    height: 30px;
+    text-align: center;
+}
+
+.more_footer a {
+    color: #666666;
+}
+
+/*底部*/
+#footer {
+    position: absolute;
+    bottom: 23px;
+    left: 0;
+    height: 100px;
+    text-align: left;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer_center {
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+    *width: 640px;
+    /*display: inline-block;*/
+    /*_zoom:1;*/
+    /**display: inline;*/
+}
+
+/*底部左边*/
+.left {
+    display: inline-block;
+    _zoom: 1;
+    *display: inline;
+    margin: 0 auto;
+    *float: left;
+}
+
+/*百度*/
+.baidu {
+    float: left;
+}
+
+/*手机百度*/
+.iphone {
+    background-image: url(../images/baidu_iphone.png);
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+
+/*百度糯米*/
+.nuomi {
+    background-image: url(../images/baidu_nuomi.png);
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+
+/*二维码旁边的注释*/
+.txt {
+    float: left;
+    margin: 8px 0 0 10px;
+    line-height: 24px;
+    color: #666666;
+}
+
+.baidu_left {
+    margin-left: 33px;
+}
+
+/*底部右边*/
+.right {
+    color: #999999;
+    display: inline-block;
+    _zoom: 1;
+    *display: inline;
+    text-align: left;
+    margin-left: 33px;
+    position: relative;
+    top: -2px;
+    *left: 33px;
+    line-height: 22px;
+    _margin-left:-20px;
+}
+
+/*IE7*/
+.right_footer{
+    *float: left;
+}
+
+/*a标签字体的颜色*/
+.right a {
+    color: #999999;
+}
+
+#set {
+    display: inline;
+}
+
+.a_margin {
+    margin-left: 62px;
+}
+
+/*小图标*/
+.small {
+    background-image: url(../images/small.png);
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.ICP {
+    background-position: -600px -96px;
+    position: relative;
+    top: 3px;
+}
+
+.JGW {
+    background-position: -623px -96px;
+    position: relative;
+    top: 2px;
+}
+
+/*手机界面样式容器*/
+#bd .cellphone{
+    opacity: 0;
+}
