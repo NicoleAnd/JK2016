@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #D2E9FF;
+    color: #000;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: 3px solid #fff;
+}
+
+.article {
+    background: #D2E9FF;
+    color: #000;
+    height: auto;
+    /*padding-left: 150px;
+            padding-right: 100px;*/
+    /*9999超范围了隐藏*/
+    overflow: hidden;
+    border: 3px solid #fff;
+}
+
+.footer {
+    background: #D2E9FF;
+    color: #000;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border: 3px solid #fff;
+}
+
+.article .middle {
+    background: #D2E9FF;
+    color: #000;
+    float: left;
+    width: 100%;
+    /*等高布局*/
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    border: 3px solid #fff;
+}
+
+.article .left {
+    background: #D2E9FF;
+    color: #000;
+    width: 144px;
+    /*height: 16px;*/
+    /*居左 左边距往左百分百就上去了*/
+    float: left;
+    margin-left: -100%;
+    /*圣杯布局结构不好调整*/
+    /*position: relative;
+            left: -150px;*/
+    /*等高布局*/
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    border: 3px solid #fff;
+}
+
+.article .right {
+    background: #D2E9FF;
+    color: #000;
+    width: 94px;
+    /*居左 左边距往左自己的宽度就上去了*/
+    float: left;
+    margin-left: -106px;
+    /*圣杯布局结构不好调整*/
+    /*position: relative;
+            right: -100px;*/
+    /*等高布局 撑了一下，缩了一下*/
+    /*height: 16px;*/
+    /*没有对下面元素操作，只是放了无限大，并不影响下面的margin*/
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    border: 3px solid #fff;
+}
+
+
+/*双飞翼布局灵活*/
+
+.inner {
+    margin-left: 156px;
+    margin-right: 106px;
+}
