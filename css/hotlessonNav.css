@@ -1,0 +1,269 @@
+/*横向导航栏*/
+
+.hot-lesson {
+    margin-top: 20px;
+}
+
+.hot-lesson ul {
+    height: 41px;
+    background: url(../images/hotnav_bc.jpg) 0 100% repeat-x;
+}
+
+.hot-lesson ul li {
+    width: 16.6%;
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+    float: left;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.lesson-one {}
+
+.lesson-two,
+.lesson-three,
+.lesson-four,
+.lesson-five,
+.lesson-six {
+    display: none;
+}
+
+.hot-lesson ul li:hover {
+    border-bottom: 2px solid #35b558;
+    background: url(../images/index-sj.png) center bottom no-repeat;
+    background-size: 10px 4px;
+    color: #35b558;
+}
+
+
+/*.hot-lesson ul li.new-course:hover + .lesson-two{
+    display: block;
+}*/
+
+
+/*导航内容区*/
+
+.hot-lesson-box .lessonList ul {}
+
+.hot-lesson-box .lessonList li {
+    margin-right: 20px;
+    background: 0 0;
+    margin-bottom: 115px;
+    height: auto;
+    width: 230px;
+    float: left;
+}
+
+
+/*上半部分 视频区*/
+
+.hot-lesson-box .lessonList .lessonimg-box {
+    border: 1px solid #e4e4e4;
+    border-bottom: 0;
+    width: 235px;
+}
+
+.lessonimg-box .free-icon {
+    height: 22px;
+    width: 38px;
+    display: inline-block;
+    position: absolute;
+    top: 61px;
+    z-index: 101;
+    background: url(../images/icon_all.png) -58px -43px no-repeat;
+    margin-left: 185px;
+}
+
+.lessonimg {
+    width: 100%;
+    height: 130px;
+}
+
+.lessonimg-box a {
+    display: block;
+}
+
+.lessonimg-box a .lessonplay {
+    background: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: relative;
+    left: 0;
+    top: 0;
+    transition: opacity 2s;
+    opacity: 0;
+}
+
+.lessonimg-box a:hover .lessonplay {
+    opacity: 1;
+    transition-duration: 2s;
+}
+
+.lessonList .lessonplay .playericon {
+    z-index: 120;
+    width: 50px;
+    height: 50px;
+    background: url(../images/player_icon.png) 0 0 no-repeat;
+    background-size: 50px 50px;
+    position: absolute;
+    left: 50%;
+    margin-top: -50%;
+    margin-left: -25px;
+    cursor: pointer;
+    top: 25px;
+}
+
+
+/*下半部分 内容区*/
+
+h2 {
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+
+.hot-lesson-box .lessonList .lesson-info {
+    padding: 10px;
+    position: absolute;
+    z-index: 200;
+    height: auto;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    width: 215px;
+}
+
+.hot-lesson-box .lessonList .lesson-info .lesson-info-h2 {
+    margin-top: 5px;
+    color: #333;
+    line-height: 18px;
+}
+
+.lessonList .lesson-info .lesson-info-h2 a {
+    color: #333;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.lessonList .lesson-info p {
+    color: gray;
+    font-size: 12px;
+    line-height: 18px;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.lessonList .lesson-info .timeandicon {
+    color: gray;
+    position: relative;
+    top: 45px;
+    width: 215px;
+    height: 50px;
+    z-index: 1;
+}
+
+.lessonList .lesson-info .timeandicon dl {
+    width: 120px;
+    float: left;
+    white-space: nowrap;
+    display: inline-block;
+    margin-top: -8px;
+}
+
+.lessonList .lesson-info .timeandicon dl .time-icon {
+    background: url(../images/clock.png) 0 0 no-repeat;
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+}
+
+.lessonList .lesson-info .lessonicon-box {
+    position: absolute;
+    right: 0;
+    top: -26px;
+}
+
+.lessonList .lesson-info .lessonicon-box a {
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+}
+
+.lessonList .lessonicon-box a img {
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+
+/*hover时显示文字内容*/
+
+.timeandicon-hover {
+    position: relative;
+    height: 115px;
+    overflow: hidden;
+    background: #fff;
+    width: 215px;
+    color: gray;
+    margin-top: -35px;
+    display: none;
+    z-index: 500;
+}
+
+.timeandicon-hover .course-contents {
+    color: gray;
+    font-size: 12px;
+    line-height: 18px;
+    height: 55px;
+    margin-bottom: 10px;
+    float: left;
+    width: 200px;
+    overflow: hidden;
+}
+
+.lesson-info .timeandicon-hover dl {
+    width: 120px;
+    float: left;
+    white-space: nowrap;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.lesson-info .timeandicon-hover dl .time-icon {
+    background: url(../images/clock.png) 0 0 no-repeat;
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+}
+
+.timeandicon-hover dl .lessontime .learn-number {
+    margin-left: 43px;
+}
+
+.timeandicon-hover dl .lessonlevel .level-icon {
+    background: url(../images/one-up.png) 0 0 no-repeat;
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+}
+
+.timeandicon-hover .lessonList .lessonicon-box {
+    position: absolute;
+    right: 10px;
+    top: 81px;
+}
+
+.hot-lesson-box li:hover .timeandicon-hover {
+    display: block;
+}
