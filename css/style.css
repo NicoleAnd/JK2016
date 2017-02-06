@@ -1,0 +1,465 @@
+﻿@charset "UTF-8";
+html {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 12px arial;
+    overflow: hidden;
+    position: relative;
+    min-width: 750px;
+    min-height: 600px;
+}
+
+.uu {
+    top: 0;
+    right: 0;
+    font-size: 13px;
+    line-height: 24px;
+    margin: 19px 0 5px 0;
+    padding: 0 10px 0 0;
+    position: absolute;
+    z-index: 0;
+    min-width: 600px;
+}
+
+.hnav {
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.login,
+.set {
+    margin-left: 20px
+}
+
+a:link,
+a:visited {
+    color: #333;
+}
+
+a:hover {
+    color: #00c;
+}
+
+a:active {
+    color: #00c;
+}
+
+
+/*设置样式*/
+
+.menu {
+    width: 50px;
+    height: 50px font-size: 12px;
+    /*float: right;*/
+    position: relative;
+    margin-top: -39px;
+    margin-left: 450px;
+    *margin-top: -24px;
+}
+
+
+/*水平菜单*/
+
+.menu li {
+    float: right;
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    height: 27px;
+    width: 60px;
+    line-height: 27px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.menu a:hover {
+    color: #00c;
+}
+
+
+/*新增的二级菜单部分*/
+
+.menu ul ul {
+    /*开始时是隐藏的*/
+    visibility: hidden;
+    list-style: none;
+    display: block;
+    position: relative;
+    margin-left: -55px;
+    text-decoration: none;
+}
+
+.menu ul li:hover ul,
+.menu ul a:hover ul {
+    visibility: visible;
+}
+
+.menu ul ul li:hover {
+    background: #3385ff;
+    color: #fff;
+}
+
+.menu ul ul li a {
+    text-decoration: none;
+    /*border:1px solid red;*/
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.menu ul ul li a:hover {
+    color: #fff;
+}
+
+.menu ul ul li {
+    /*垂直显示*/
+    clear: both;
+    text-align: left;
+}
+
+.menu ul li ul .searchset {
+    border-top: 1px solid gray;
+}
+
+.menu ul li ul .searchhistory {
+    border-bottom: 1px solid gray;
+}
+
+
+/*中间样式*/
+
+.middle {
+    text-align: center;
+    padding-top: 70px;
+}
+
+#form {
+    width: auto;
+    text-align: center;
+    margin: 22px auto 0;
+    z-index: 0;
+}
+
+.input_all {
+    width: 539px;
+    height: 34px;
+    border: 1px solid #c8c8c8;
+    vertical-align: top;
+    margin-right: 0;
+    border-right-width: 0;
+    border-color: #b8b8b8;
+    overflow: hidden;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+}
+
+.input_allhover {
+    width: 539px;
+    height: 34px;
+    border: 1px solid #4791ff;
+    border-bottom-color: #4791ff;
+    vertical-align: top;
+    /*margin-right: 0;
+    border-right-width: 0;*/
+    overflow: hidden;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+}
+
+.camera {
+    width: 18px;
+    height: 16px;
+    top: 50%;
+    right: 11px;
+    margin-top: -8px;
+    background: #fff url(../images/camera.png) no-repeat;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.camera:hover {
+    background-position: 0 -20px;
+}
+
+.enter {
+    width: 538px;
+    height: 22px;
+    font: 16px;
+    margin: 6px 0 0 7px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+.btn_s {
+    width: auto;
+    height: auto;
+    /*border-bottom: 1px solid transparent;*/
+    background-position: -120px -48px;
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    margin-left: 0;
+    border-left-width: 0;
+}
+
+input {
+    border: 0;
+    padding: 0 7px;
+}
+
+.btn {
+    width: 100px;
+    height: 36px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border-bottom: 1px solid #2d78f4;
+    cursor: pointer;
+}
+
+.btnhover {
+    width: 100px;
+    height: 36px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #317ef3;
+    border-bottom: 1px solid #2868c8;
+    box-shadow: 1px 1px 1px #ccc;
+    cursor: pointer;
+}
+
+
+/*footer*/
+
+.ftct {
+    height: 110px;
+    *height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 23px;
+    text-align: left;
+    margin: 0 auto;
+    z-index: 0;
+    overflow: hidden;
+    /*top: 500px;*/
+    *margin-left: 30%;
+}
+
+.ftct_con {
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.codelt {
+    display: inline-block;
+    *margin-top: 120px;
+}
+
+.code1 {
+    float: left;
+}
+
+.code1_img {
+    background: url(../images/QR_bd.png) 0 0 no-repeat;
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+
+.code1_text {
+    float: left;
+    color: #999;
+    line-height: 13px;
+    *line-height: 18px;
+    margin: 0 0 0 10px;
+}
+
+.code2 {
+    margin-left: 33px;
+    float: left;
+}
+
+.code2_img {
+    background: url(../images/QR_nm.png) 0 0 no-repeat;
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+
+.code2_text {
+    color: #999;
+    line-height: 13px;
+    *line-height: 18px;
+    margin: 0 0 0 10px;
+    float: left;
+}
+
+.codert {
+    text-align: left;
+    line-height: 0;
+    *line-height: 10px;
+    margin-left: 33px;
+    *margin-left: 24%;
+    display: inline-block;
+    *margin-top: -75px;
+}
+
+.codert a {
+    color: #999;
+}
+
+.onel {
+    margin-left: 0;
+}
+
+.twol,
+.threel {
+    color: #999;
+}
+
+.jgwab {
+    width: 14px;
+    height: 17px;
+    background: url(../images/icons.png) no-repeat;
+    background-position: -623px -96px;
+    top: 3px;
+    margin-right: 6px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+.icp {
+    width: 14px;
+    height: 17px;
+    background: url(../images/icons.png) no-repeat;
+    background-position: -600px -96px;
+    top: 3px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/*更多产品样式*/
+
+.more_menu {
+    font-size: 12px;
+    border: 0;
+    width: 85px;
+    text-align: center;
+    float: right;
+}
+
+.more_menu ul {
+    width: 70px;
+    list-style: none;
+    float: right;
+    text-align: center;
+    border: 0;
+    position: relative;
+    margin-right: 10px;
+    /*border:1px solid red;*/
+    *margin-left: -20px;
+    *margin-top: 15px;
+}
+
+.more {
+    /*margin-top: -14px;*/
+    margin-left: -20px;
+    background: #38F none repeat scroll 0% 0%;
+    border-bottom: 1px solid #38F;
+    display: inline-block;
+}
+
+a.more {
+    color: white;
+    text-decoration: none;
+}
+
+.more_menu ul a {
+    display: block;
+    width: 70px;
+    line-height: 33px;
+    text-align: center;
+    overflow: hidden;
+    margin-left: -15px;
+}
+
+.more_menu ul li ul {
+    visibility: hidden;
+    list-style: none;
+    display: block;
+    text-align: center;
+    width: 70px;
+    /*border:1px solid orange;*/
+    background-color: #f8f8ff;
+    position: relative;
+    margin-right: -1px;
+}
+
+.more_menu ul li:hover ul,
+.more_menu ul a:hover ul {
+    visibility: visible;
+}
+
+.more_menu a:hover {
+    text-decoration: none;
+}
+
+.more_menu span {
+    border: 0;
+    width: 36px;
+    height: 36px;
+    display: block;
+    background: url(../images/bd_icons.png) no-repeat;
+    cursor: pointer;
+    margin-left: 19px;
+    margin-top: 20px;
+    /*border:1px solid blue;*/
+    text-align: center;
+}
+
+.more_menu ul li ul li .music {
+    width: 36px;
+    background-position: -72px 0;
+}
+
+.more_menu ul li ul li .pic {
+    width: 36px;
+    background-position: -112px 0;
+}
+
+.more_menu ul li ul li .known {
+    width: 36px;
+    background-position: -36px 0;
+}
+
+.more_menu ul li ul li .arti {
+    width: 36px;
+    background-position: -148px 0;
+}
+
+.more_menu ul li ul li .top {
+    width: 36px;
+    background-position: -184px 0;
+}
+
+.more_menu ul li ul li .extent {
+    width: 36px;
+    background-position: -220px 0;
+}
