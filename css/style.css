@@ -1,0 +1,153 @@
+@charset "utf-8";
+body {
+    text-align: center;
+    font-family: "Microsoft YaHei";
+}
+
+.wrap {
+    width: 628px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrap .header {
+    width: 628px;
+    height: 113px;
+    margin: 0 auto;
+    background-color: #389cff;
+    color: #ffffff;
+}
+
+.wrap .header .busHeader .busInfo-left {
+    height: 74px;
+    padding: 15px 0px 0px 30px;
+    background-color: #389cff;
+    vertical-align: top;
+    font-size: 13px;
+}
+
+.wrap .header .busHeader .busInfo-left .busInfo-num {
+    height: 48px;
+    line-height: 48px;
+    padding-bottom: 4px;
+    font-size: 60px;
+}
+
+.wrap .header .busHeader .busInfo-left .busInfo-lu {
+    width: 68px;
+    height: 22px;
+    line-height: 20px;
+    font-size: 16px;
+    background-color: #2d90f2;
+}
+
+.wrap .header .busHeader .busInfo-right {
+    position: relative;
+}
+
+.wrap .header .busHeader .busInfo-right .busInfo-rightContent .busInfo-startEnd {
+    height: 30px;
+    font-size: 18px;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.wrap .header .busHeader .busInfo-right .busInfo-rightContent .busInfo-startEnd .busInfo-start {
+    text-align: right;
+    padding-right: 8px;
+    font-size: 24px;
+    line-height: 24px;
+    display: block;
+}
+
+.wrap .header .busHeader .busInfo-right .busInfo-rightContent .busInfo-startEnd .busInfo-end {
+    text-align: left;
+    padding-left: 8px;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.wrap .header .busHeader .busInfo-right .busInfo-rightContent .busInfo-info .busInfo-infoContent {
+    display: inline-block;
+    float: left;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.wrap .header .busHeader .busInfo-right .busInfo-rightContent .busInfo-info .busInfo-infoContent .busInfo-startTime {
+    width: 200px;
+    font-size: 13px;
+}
+
+.wrap .header .busHeader .busInfo-right .busInfo-rightContent .busInfo-info .busInfo-infoContent .busInfo-price {
+    width: 200px;
+    font-size: 13px;
+}
+
+.wrap .header .busHeader .busInfo-right .busInfo-rightContent .busInfo-ReturnJourney {
+    position: absolute;
+    border: solid 1px #fff;
+    top: 14px;
+    right: -80px;
+    width: 63px;
+    height: 20px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.wrap .header .busHeader .busInfo-right .busInfo-rightContent .map {
+    position: absolute;
+    top: 57px;
+    right: -84px;
+    width: 111px;
+    height: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+.wrap .content {
+    border: 2px solid #389cff;
+}
+
+.wrap .content ul {
+    width: 628px;
+    height: 150px;
+}
+
+.wrap .content ul li {
+    list-style: none;
+    float: left;
+}
+
+.wrap .content ul li a {
+    color: #333;
+    width: 20px;
+    height: 116px;
+    padding: 8px 3px;
+    text-decoration: none;
+    display: block;
+}
+
+.wrap .content ul li a:hover {
+    color: #e84e40;
+}
+
+.wrap .content ul li a:focus {
+    color: #e84e40;
+}
+
+.wrap .content ul li a .num {
+    display: inline-block;
+    width: 20px;
+    padding-bottom: 6px;
+    cursor: pointer;
+}
+
+.wrap .content ul li a .text {
+    display: inline-block;
+    width: 18px;
+    text-align: left;
+    margin-left: 3px;
+    cursor: pointer;
+}

@@ -1,0 +1,154 @@
+@charset"utf-8";
+//定义变量
+@fontFamily: "Microsoft YaHei";
+@largeWidth: 628px;
+@litWidth: 200px;
+@bgColor: #389cff;
+@litbBgColor: #2d90f2;
+@hoverColor: #e84e40;
+@fontColor: #fff;
+@f13: 13px;
+@f16: 16px;
+@f18: 18px;
+@f24: 24px;
+@f60: 60px;
+body {
+    text-align: center;
+    font-family: @fontFamily;
+}
+
+.wrap {
+    width: @largeWidth;
+    margin: 0 auto;
+    position: relative;
+    //头部
+    .header {
+        width: @largeWidth;
+        height: 113px;
+        margin: 0 auto;
+        background-color: @bgColor;
+        color: @fontColor;
+        .busHeader {
+            .busInfo-left {
+                height: 74px;
+                padding: 15px 0px 0px 30px;
+                background-color: @bgColor;
+                vertical-align: top;
+                font-size: @f13;
+                .busInfo-num {
+                    height: 48px;
+                    line-height: 48px;
+                    padding-bottom: 4px;
+                    font-size: @f60;
+                }
+                .busInfo-lu {
+                    width: 68px;
+                    height: 22px;
+                    line-height: 20px;
+                    font-size: @f16;
+                    background-color: @litbBgColor;
+                }
+            }
+            .busInfo-right {
+                position: relative;
+                .busInfo-rightContent {
+                    .busInfo-startEnd {
+                        height: 30px;
+                        font-size: @f18;
+                        display: inline-block;
+                        padding-top: 10px;
+                        .busInfo-start {
+                            text-align: right;
+                            padding-right: 8px;
+                            font-size: @f24;
+                            line-height: 24px;
+                            display: block;
+                        }
+                        .busInfo-direction {}
+                        .busInfo-end {
+                            text-align: left;
+                            padding-left: 8px;
+                            font-size: @f24;
+                            line-height: 24px;
+                        }
+                    }
+                    .busInfo-info {
+                        .busInfo-infoContent {
+                            display: inline-block;
+                            float: left;
+                            line-height: 20px;
+                            font-size: 13px;
+                            .busInfo-startTime {
+                                width: @litWidth;
+                                font-size: @f13;
+                            }
+                            .busInfo-price {
+                                width: @litWidth;
+                                font-size: @f13;
+                            }
+                        }
+                    }
+                    .busInfo-ReturnJourney {
+                        position: absolute;
+                        border: solid 1px #fff;
+                        top: 14px;
+                        right: -80px;
+                        width: 63px;
+                        height: 20px;
+                        font-size: @f13;
+                        line-height: 20px;
+                    }
+                    .map {
+                        position: absolute;
+                        top: 57px;
+                        right: -84px;
+                        width: 111px;
+                        height: 20px;
+                        font-size: @f13;
+                        line-height: 20px;
+                        color: @fontColor;
+                    }
+                }
+            }
+        }
+    }
+    //内容
+    .content {
+        border: 2px solid #389cff;
+        ul {
+            width: 628px;
+            height: 150px;
+            li {
+                list-style: none;
+                float: left;
+                a {
+                    color: #333;
+                    width: 20px;
+                    height: 116px;
+                    padding: 8px 3px;
+                    text-decoration: none;
+                    display: block;
+                    &:hover {
+                        color: @hoverColor;
+                    }
+                    &:focus {
+                        color: @hoverColor;
+                    }
+                    .num {
+                        display: inline-block;
+                        width: 20px;
+                        padding-bottom: 6px;
+                        cursor: pointer;
+                    }
+                    .text {
+                        display: inline-block;
+                        width: 18px;
+                        text-align: left;
+                        margin-left: 3px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
