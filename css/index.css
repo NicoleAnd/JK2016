@@ -1,0 +1,830 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+html {
+    height: 100%;
+    min-width: 700px;
+    *overflow-x: hidden;
+}
+
+body {
+    font-size: 13px;
+    min-height: 600px;
+    position: relative;
+    height: 100%;
+    text-align: center;
+}
+
+a,
+img {
+    border: 0;
+}
+
+
+/*中间布局*/
+
+.cen {
+    position: relative;
+    top: 38%;
+}
+
+.form_submit {
+    position: relative;
+    top: 65px;
+    +top: -191px;
+    _top: -120px;
+}
+
+
+/*logo图片*/
+
+.logo img {
+    width: 270px;
+    height: 129px;
+}
+
+
+/*表单*/
+
+#form {
+    margin: 22px auto 0;
+    width: 641px;
+    text-align: left;
+    z-index: 100;
+}
+
+.fromFloatstyle {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    opacity: 0.95;
+    position: fixed;
+    top: -3px;
+    z-index: 1000;
+    display: none;
+}
+
+#formFloat {
+    width: 749px;
+    text-align: left;
+    z-index: 100;
+    position: absolute;
+    top: 23px;
+    left: 17%;
+}
+
+
+/*搜索*/
+
+.search_input {
+    position: relative;
+}
+
+.search_input input {
+    width: 500px;
+}
+
+.search_class {
+    border: 1px solid #b6b6b6;
+    width: 539px;
+    display: inline-block;
+    height: 34px;
+    margin-right: 0;
+    border-right-width: 0;
+}
+
+.search_class:hover {
+    border-color: #999;
+}
+
+
+/*搜索框*/
+
+.input_text {
+    position: relative;
+}
+
+.input_class {
+    font-size: 16px;
+    height: 22px;
+    margin: 6px 0 0 7px;
+    border: 0;
+    outline: 0;
+}
+
+
+/*照相机*/
+
+.search_camera {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    background: url(../images/search_input.png) no-repeat -229px 0;
+    width: 18px;
+    height: 16px;
+    margin-top: -8px;
+    cursor: pointer;
+}
+
+.search_camera:hover {
+    background-position: -229px -21px;
+}
+
+
+/*按钮背景*/
+
+.btn_submit {
+    display: inline-block;
+    float: right;
+    border-left: 1px solid #3385ff;
+    *position: relative;
+    *top: -36px;
+}
+
+.btn_submit1 {
+    display: inline-block;
+    float: right;
+    border-left: 2px solid #3385ff;
+}
+
+.bg:hover {
+    background-color: #317ef3;
+}
+
+
+/*按钮样式*/
+
+.btn,
+.btn1 {
+    color: white;
+    letter-spacing: 1px;
+    background-color: #3385ff;
+    width: 100px;
+    height: 36px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 0;
+}
+
+
+/*导航*/
+
+#top {
+    margin: 20px 0 5px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 24px;
+    padding-right: 130px;
+}
+
+#top a:hover {
+    color: #00c;
+    text-decoration: underline;
+}
+
+.top_lead {
+    color: #333333;
+    font-weight: bold;
+    margin-left: 20px;
+    float: left;
+}
+
+
+/*登录/设置*/
+
+.login,
+.set,
+.more {
+    float: left;
+    color: #333333;
+    margin-left: 20px;
+}
+
+
+/*设置*/
+
+
+/*设置下拉菜单*/
+
+.setting-menu {
+    position: absolute;
+    width: 47px;
+    height: 24px;
+    right: 80px;
+    text-align: center;
+}
+
+.setting-menu a {
+    margin: 0;
+    color: #333333;
+}
+
+.setting-menu .baidu-setting {
+    position: absolute;
+    top: 25px;
+    left: -7px;
+    width: 60px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 5px #ddd;
+    z-index: 99;
+    /*隐藏*/
+    display: none;
+}
+
+#top .setting-menu .baidu-setting a {
+    display: inline-block;
+    width: 100%;
+    color: #333;
+}
+
+.setting-menu .icon-trangle {
+    top: -11px;
+    left: 25px;
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #d8d8d8;
+}
+
+.setting-menu .icon-trangle:after {
+    content: '.';
+    top: -4px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #fff;
+}
+
+
+/*更多*/
+
+.more {
+    position: absolute;
+    right: 10px;
+    background-color: #3388ff;
+    color: white;
+    text-decoration: none;
+    width: 60px;
+    height: 23px;
+    text-align: center;
+}
+
+
+/*更多产品整体*/
+
+.details {
+    z-index: 2;
+    width: 85px;
+    border-left: 1px solid #e7e7e7;
+    background-color: #f9f9f9;
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-height: 100%;
+    display: none;
+}
+
+
+/*更多产品*/
+
+.more_dp {
+    color: #333333;
+    width: 66px;
+    text-align: center;
+    height: 43px;
+    line-height: 43px;
+    padding-top: 9px;
+    margin: 0 auto;
+    font-size: 13px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.more_bottom a {
+    width: 66px;
+    height: 68px;
+    text-align: center;
+    color: #666666;
+    text-decoration: none;
+    border-bottom: 1px solid #f0f0f0;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/*下拉统一样式*/
+
+.bg_dp {
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: 10px auto 5px;
+    cursor: pointer;
+    background-image: url(../images/bg_pd.png);
+}
+
+
+/*音乐*/
+
+.music {
+    width: 40px;
+    background-position: -72px 0;
+}
+
+
+/*图片*/
+
+.image {
+    background-position: -112px 0;
+}
+
+
+/*知道*/
+
+.zhidao {
+    background-position: -36px 0;
+}
+
+
+/*文库*/
+
+.wenku {
+    background-position: -148px 0;
+}
+
+
+/*风云榜*/
+
+.top {
+    background-position: -184px 0;
+}
+
+
+/*百度推广*/
+
+.ebaidu {
+    background-position: -220px 0;
+}
+
+
+/*全部产品*/
+
+.more_footer {
+    margin-top: 15px;
+    height: 30px;
+    text-align: center;
+}
+
+.more_footer a {
+    color: #666666;
+}
+
+
+/*底部*/
+
+#footer {
+    position: absolute;
+    bottom: 23px;
+    left: 0;
+    height: 100px;
+    text-align: left;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer_center {
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+    *width: 640px;
+    /*display: inline-block;*/
+    /*_zoom:1;*/
+    /**display: inline;*/
+}
+
+
+/*底部左边*/
+
+.left {
+    display: inline-block;
+    _zoom: 1;
+    *display: inline;
+    margin: 0 auto;
+    *float: left;
+}
+
+
+/*百度*/
+
+.baidu {
+    float: left;
+}
+
+
+/*手机百度*/
+
+.iphone {
+    background-image: url(../images/baidu_iphone.png);
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+
+
+/*百度糯米*/
+
+.nuomi {
+    background-image: url(../images/baidu_nuomi.png);
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+
+
+/*二维码旁边的注释*/
+
+.txt {
+    float: left;
+    margin: 8px 0 0 10px;
+    line-height: 24px;
+    color: #666666;
+}
+
+.baidu_left {
+    margin-left: 33px;
+}
+
+
+/*底部右边*/
+
+.right {
+    color: #999999;
+    display: inline-block;
+    _zoom: 1;
+    *display: inline;
+    text-align: left;
+    margin-left: 33px;
+    position: relative;
+    top: -2px;
+    *left: 33px;
+    line-height: 22px;
+    _margin-left: -20px;
+}
+
+
+/*IE7*/
+
+.right_footer {
+    *float: left;
+}
+
+
+/*a标签字体的颜色*/
+
+.right a {
+    color: #999999;
+}
+
+#set {
+    display: inline;
+}
+
+.a_margin {
+    margin-left: 62px;
+}
+
+
+/*小图标*/
+
+.small {
+    background-image: url(../images/small.png);
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.ICP {
+    background-position: -600px -96px;
+    position: relative;
+    top: 3px;
+}
+
+.JGW {
+    background-position: -623px -96px;
+    position: relative;
+    top: 2px;
+}
+
+
+/*登录弹框样式*/
+
+
+/*input*/
+
+.ipt {
+    border: solid 1px #d2d2d2;
+    border-radius: 2px;
+    background-color: #fff;
+    padding: 5px 30px;
+    line-height: 30px;
+    vertical-align: baseline;
+    outline: none;
+    width: 260px;
+    padding-right: 50px;
+    position: relative;
+    left: -157px;
+}
+
+.ipt:focus {
+    border-color: #3F89EB;
+    transition: .3s;
+}
+
+.auto-login {
+    position: relative;
+    left: -157px;
+    color: #666;
+    font-size: 12px;
+}
+
+.login-trouble {
+    position: relative;
+    right: -20px;
+    color: #3F89EB;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.fast-register {
+    position: relative;
+    right: -136px;
+    color: #3F89EB;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.aword:hover {
+    color: #3F89EB;
+    text-decoration: underline;
+}
+
+.line {
+    border-top: 1px solid #eee;
+    padding-left: 394px;
+    z-index: 16;
+    padding-bottom: -5px;
+    position: relative;
+    left: -185px;
+    top: 15px;
+}
+
+.login-icon {
+    position: relative;
+    left: -153px;
+}
+
+
+/*.two-icon{
+    height: 24px;
+}*/
+
+.qq-icon {
+    display: block;
+    padding-left: 24px;
+    cursor: pointer;
+    background: url(../images/pass_login_icons_e059c37.png) -88px 0 no-repeat;
+    width: 0;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.sina-icon {
+    display: block;
+    padding-left: 24px;
+    cursor: pointer;
+    background: url(../images/pass_login_icons_e059c37.png) -64px 0 no-repeat;
+    width: 0;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    margin-left: 15px;
+}
+
+.code-icon {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    right: -148px;
+    bottom: -26px;
+    cursor: pointer;
+    background: url(../images/pass_login_icons_e059c37.png) -44px -86px no-repeat;
+    z-index: 21;
+}
+
+
+/* btnn */
+
+.btnn {
+    display: block;
+    width: 350px;
+    height: 48px;
+    position: relative;
+    left: -157px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    background: #3F89EB;
+    border-radius: 3px;
+    border: 0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    -webkit-transition: .3s;
+}
+
+.btnn:hover,
+.btnn:active {
+    background: #4490f7;
+    cursor: pointer;
+}
+
+
+/*.btnn:focus {
+    border-color: #4d90fe;
+    outline: none
+}*/
+
+.login-buy {
+    margin-top: 7%;
+    text-align: center;
+}
+
+.login-signin {
+    font-size: 15px;
+}
+
+.login-mask {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    display: none;
+}
+
+.login-popover {
+    z-index: 9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 393px;
+    /*height: 360px;*/
+    margin: -180px 0 0 -180px;
+    border-radius: 5px;
+    border: solid 2px #e4e4e4;
+    background-color: #fff;
+    display: none;
+    box-shadow: 0 0 10px #666;
+    background: #fff;
+}
+
+.login-poptit {
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+    position: relative;
+    height: 24px;
+    cursor: move;
+}
+
+.login-poptit .close {
+    float: right;
+    color: #999;
+    padding: 5px;
+    margin: -2px -5px -5px;
+    font: bold 14px/14px simsun;
+    text-shadow: 0 1px 0 #ddd;
+    text-decoration: none;
+}
+
+.login-poptit .close:hover {
+    color: #444;
+}
+
+.login-poptit span {
+    width: auto;
+    height: 18px;
+    font-size: 16px;
+    font-family: 宋体;
+    font-weight: 700;
+    color: rgb(102, 102, 102);
+    text-indent: 50px;
+    margin-right: 29px;
+    display: block;
+    text-overflow: ellipsis;
+    text-align: left;
+    box-sizing: content-box;
+    background: url(../images/baidu_logo_24_718a6c4.png) 10px -2px no-repeat;
+    padding: 5px 0px;
+    overflow: hidden;
+}
+
+.login-popbod {
+    padding: 60px 15px;
+    color: #444;
+    height: auto;
+    position: relative;
+}
+
+.dform {
+    /*padding: 80px 60px 40px;*/
+    text-align: center;
+}
+
+.login-signin {
+    margin: -50px -20px -50px 90px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.message-login {
+    background: url(../images/smsSwitchPhone_68b31bb.png) no-repeat;
+    padding-left: 15px;
+    color: #666;
+    cursor: pointer;
+    text-decoration: none;
+    float: right;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.login-signin li {
+    padding-left: 80px;
+    margin-bottom: 15px;
+}
+
+
+/*.login-signin li strong {
+    float: left;
+    margin-left: -80px;
+    width: 80px;
+    text-align: right;
+    line-height: 32px;
+}*/
+
+
+/*input_icons_24_2764534.png*/
+
+.username {
+    background: url(../images/input_icons_24_2764534.png) 0 -68px no-repeat;
+    display: block;
+    position: absolute;
+    top: 56px;
+    left: 32px;
+    height: 24px;
+    overflow: hidden;
+    padding: 0 0 0 24px;
+    z-index: 20;
+}
+
+.password {
+    background: url(../images/input_icons_24_2764534.png) 0 -147px no-repeat;
+    display: block;
+    position: absolute;
+    top: 113px;
+    left: 32px;
+    height: 24px;
+    overflow: hidden;
+    padding: 0 0 0 24px;
+    z-index: 20;
+}
+
+.login-signin .btn {
+    margin-bottom: 10px;
+}
+
+.login-signin p {
+    font-size: 12px;
+    color: #999;
+}
