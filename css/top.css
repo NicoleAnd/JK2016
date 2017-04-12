@@ -1,0 +1,152 @@
+/*logo search login*/
+
+.header_top {
+    font-size: 12px;
+    height: 50px;
+}
+
+
+/*极客学院首页logo*/
+
+.header .logo {
+    float: left;
+    width: 113px;
+    margin: 18px 10px 20px 140px;
+}
+
+
+/*极客学院首页小火车ad*/
+
+.header .yearad {
+    width: 160px;
+    height: 50px;
+    margin: 10px 18px -40px 13px;
+    float: left;
+}
+
+input {
+    display: inline-block;
+}
+
+.top_search {
+    width: 380px;
+    height: 38px;
+    border: 1px solid #e4e4e4;
+    position: absolute;
+    left: 50%;
+    margin: 17px 0 0 -190px;
+    z-index: 1000;
+}
+
+.headsearch input {
+    outline: medium;
+}
+
+.top_search .search_text {
+    /*width: 100%;*/
+    width: 82%;
+    height: 36px;
+    border: 0;
+    line-height: 18px;
+    /*padding: 9px 150px 9px 15px;*/
+    color: #333;
+    background: #fff;
+    text-align: left;
+    padding-left: 15px;
+    z-index: 1000;
+}
+
+.top_search .search_btn {
+    background: url(../images/topsearch.png) center center no-repeat;
+    width: 40px;
+    height: 39px;
+    border: 1px solid #dfdfdf;
+    color: #6d6d6d;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    cursor: pointer;
+}
+
+.top_search .search_btn:hover {
+    background: url(../images/topsearch1.png) #33cc66 center center no-repeat;
+    width: 40px;
+    height: 39px;
+    border: 1px solid #33cc66;
+    color: #6d6d6d;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    cursor: pointer;
+}
+
+.top_search .hot_words {
+    position: absolute;
+    top: 9px;
+    right: 48px;
+}
+
+.top_search .hot_words a {
+    display: inline-block;
+    color: gray;
+    background-color: #f3f3f3;
+    padding: 1px 3px;
+    margin-left: 5px;
+}
+
+.top_search .hot_words a:hover {
+    display: inline-block;
+    color: gray;
+    background-color: #c4c4c4;
+    padding: 1px 3px;
+    margin-left: 5px;
+}
+
+
+/*登录小块*/
+
+.login_box {
+    font-size: 12px;
+    color: #333;
+    display: inline-block;
+    text-align: right;
+    line-height: 50px;
+    float: right;
+    margin: 18px 145px 0px 0px;
+}
+
+.talk_ball {
+    background: url(../images/massage.gif) left center no-repeat;
+    background-size: 15px 13px;
+    /*box-sizing: content-box;
+            display: inline-block;
+            width: 50px;*/
+    position: relative;
+    text-align: left;
+    padding-left: 12px;
+}
+
+.login_box span a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/*加载线*/
+
+#loading {
+    width: 100%;
+    height: 2px;
+    background: #f3f3f3;
+    float: right;
+    margin: -8px 0 0 0;
+}
+
+#loading .load_length {
+    height: 2px;
+    /*background: -webkit-gradient(linear, 10% 10%, 100% 100%, color-stop(0.14, #35b550), color-stop(0.5, #8aca8c), color-stop(1, #2d85ca));*/
+    background: #35b550;
+}
+
+
+/*横向导航栏*/

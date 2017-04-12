@@ -1,0 +1,201 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: normal 12px 微软雅黑;
+}
+
+ul,
+li,
+dt,
+dd,
+dl {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+}
+
+h1 {
+    font-size: 100%;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #6c6c6c;
+}
+
+a:hover {
+    color: #ff4200;
+}
+
+body {
+    min-width: 1000px;
+    color: #6c6c6c;
+}
+
+.header {
+    height: 115px;
+}
+
+.topNav {
+    /*background-color: red;*/
+}
+
+.topNav2 {
+    width: 200%;
+    position: absolute;
+    left: -50%;
+    /*top: 0;*/
+    top: 70px;
+    z-index: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.navMain {
+    width: 1120px;
+    margin: 0 auto;
+    /*margin: 23px auto;*/
+    height: 45px;
+    position: relative;
+}
+
+.navIndex {
+    padding-left: 0;
+    height: 45px;
+}
+
+.navIndex li {
+    color: #000;
+    font-size: 14px;
+    float: left;
+    line-height: 50px;
+    height: 45px;
+    width: 112px;
+    text-align: center;
+}
+
+.navIndex a {
+    color: #000;
+    display: block;
+    width: 112px;
+    height: 45px;
+}
+
+.navIndex a:hover {
+    color: #35b550;
+}
+
+.navSub {
+    width: 660px;
+    height: 187px;
+    /*二级菜单隐藏*/
+    display: none;
+    overflow: hidden;
+    padding-left: 25px;
+    z-index: 1000;
+}
+
+.navSub a {
+    color: #000;
+    display: block;
+    height: 26px;
+    margin: 0 auto;
+    width: 108px;
+}
+
+.navSub a:hover {
+    color: #35b550;
+    /*background-position: -1232px 0;*/
+}
+
+.navSub dl {
+    width: 112px;
+    float: left;
+    text-align: left;
+    line-height: 26px;
+    position: relative;
+    padding-top: 6px;
+    height: 134px;
+}
+
+.navSub dt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-indent: -5000px;
+    background-position: -1120px 0;
+    display: none;
+}
+
+.navSub dd {
+    position: relative;
+}
+
+.nav2 {
+    margin-left: 115px;
+    /*_margin-left: 132px;*/
+}
+
+.navSub dt,
+.navSub,
+li.nav3,
+a.nav4:hover,
+.navSub a:hover {
+    background-color: #D3D3D3;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+}
+
+
+/*导航右边*/
+
+.nav_right {
+    margin-right: 112px;
+    margin-top: -31px;
+    float: right;
+}
+
+.nav_right span {
+    display: inline-block;
+    margin: -15px 10px;
+}
+
+.nav_right a {
+    color: #333;
+}
+
+.nav_right a:hover {
+    color: #35b550;
+}
+
+.nav_right img {
+    margin-right: 5px;
+}
+
+.nav_right .new img:nth-child(2) {
+    width: 14px;
+    height: 15px;
+}

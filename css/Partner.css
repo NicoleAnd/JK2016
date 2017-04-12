@@ -1,0 +1,135 @@
+/*战略合作企业*/
+
+.enterprise {
+    width: 1000px;
+}
+
+.enterprise-list {
+    margin-top: 40px;
+}
+
+.enterprise-title {
+    margin-bottom: 16px;
+}
+
+.enterprise-title strong a {
+    font-size: 18px;
+    color: #333;
+    float: left;
+    font-weight: 500;
+}
+
+.more-lesson {
+    font-size: 12px;
+    color: #2d85ca;
+    float: right;
+    margin-top: 4px;
+}
+
+.enterprise-card {
+    border: 1px solid #E4E4E4;
+    height: 90px;
+    padding: 15px;
+    position: relative;
+    top: 40px;
+}
+
+.enterprise-lesson {
+    float: left;
+    position: absolute;
+    top: 30px;
+}
+
+.enterprise-card .enterprise-lesson img {
+    height: 50px;
+    width: 150px;
+    border: 1px solid #e4e4e4;
+    margin: 3px;
+}
+
+
+/*合作院校*/
+
+.academy {
+    width: 1000px;
+}
+
+.academy-list {
+    margin-top: 70px;
+}
+
+.academy-title {
+    margin-bottom: 16px;
+}
+
+.academy-title strong a {
+    font-size: 18px;
+    color: #333;
+    float: left;
+    font-weight: 500;
+}
+
+.academy-card {
+    border: 1px solid #E4E4E4;
+    height: 150px;
+    padding: 15px;
+    position: relative;
+    top: 40px;
+}
+
+.academy-lesson {
+    float: left;
+    position: absolute;
+    top: 35px;
+}
+
+.academy-card .academy-lesson img {
+    height: 110px;
+    width: 110px;
+    /*border: 1px solid #e4e4e4;*/
+    margin: 12px;
+}
+
+
+/*媒体报道*/
+
+.media {
+    width: 1000px;
+}
+
+.media-list {
+    margin-top: 70px;
+    margin-bottom: 54px;
+}
+
+.media-title {
+    margin-bottom: 16px;
+}
+
+.media-title strong a {
+    font-size: 18px;
+    color: #333;
+    float: left;
+    font-weight: 500;
+}
+
+.media-card {
+    border: 1px solid #E4E4E4;
+    height: 90px;
+    padding: 15px;
+    position: relative;
+    top: 40px;
+}
+
+.media-lesson {
+    float: left;
+    position: absolute;
+    top: 30px;
+}
+
+.media-card .media-lesson img {
+    height: 50px;
+    width: 150px;
+    border: 1px solid #e4e4e4;
+    margin: 3px;
+}
