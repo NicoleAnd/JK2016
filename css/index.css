@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     list-style-type: none;
 }
 
@@ -828,3 +829,85 @@ img {
     font-size: 12px;
     color: #999;
 }
+=======
+}
+
+body {
+    font-style: 12px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    background: #fff;
+    height: 115px;
+}
+
+.article {}
+
+.middle_top {
+    width: 1000px;
+    margin: 0 auto;
+    /*border:1px solid red;*/
+    margin-top: 20px;
+}
+
+.middle_top_left {
+    /*border:1px solid;*/
+    width: 211px;
+    float: left;
+}
+
+.middle_top_center {
+    height: auto;
+    overflow: hidden;
+    clear: both;
+}
+.article-next {
+    width: 1000px;
+    margin: 0 auto;
+}
+.middle_top_right {
+    /*border:1px solid;*/
+    width: 213px;
+    float: left;
+    margin-left: 785px;
+    margin-top: -376px;
+}
+
+.view_content {
+    top: 30px;
+    position: relative;
+}
+
+.view_content {
+    top: 30px;
+    position: relative;
+}
+
+#wrapper .footer {
+    width: 100%;
+    float: left;
+    /*position: absolute;*/
+    bottom: -45px;
+    background: pink;
+    color: white;
+    height: 100px;
+}
+
+
+/*头部内容区 top.css*/
+
+
+/*横向导航栏 topNav.css*/
+
+
+/*纵向导航栏 vertical_nav.css*/
+>>>>>>> master
