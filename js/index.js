@@ -36,17 +36,7 @@ $(function() {
         $(this).css({ 'color': '#333', 'background-color': '#fff' });
     });
 
-    //登录
-    // $('.login').click(function(){
-    //     $('.login-mask').show();
-    //     $('.login-mask').height($(document).height());
-    //     $('.login-content').slideDown(200);
-    // });
-
-    // $('.login-title .close').click(function(){
-    //     $('.login-mask').hide();
-    //     $('.login-content').slideUp(200);
-    // });
+   
     $('.login').click(function() {
         $('.login-mask').show();
         $('.login-mask').height($(document).height());
@@ -86,8 +76,6 @@ $(function() {
     $("#submitName").click(function() {
         var userdata = $("#userName").val();
         $("#loginUserName").data(userdata);
-        // var getuserdata = userdata.data()
-        // $("#loginUserName").html(getuserdata);
     })
 
 });
